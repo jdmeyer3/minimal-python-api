@@ -41,3 +41,6 @@ This will create a wheel file in your `dist` folder. If you don't specify the fu
 # Creating the Docker image
 
 For the docker image I'm simply using a Python Alpine image. NOTE. make sure the python version you use for the alpine image matches what's in your `pants.ini` file. Copy the PEX into the container and run it. It's that simple. I'll work on gathering size comparisons of deploying the Python app via a wheel vs. the PEX. In my experience, this is the simpliest (in terms of the Dockerfile) and smallest Docker Python app I've made. 
+
+# Contributions
+If I've made some mistake or you would like me to go over some other build processes, please submit an issue and I'll try to help as much as I can. 
