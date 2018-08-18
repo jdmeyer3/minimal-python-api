@@ -1,8 +1,0 @@
-MANIFEST.in
-setup.py
-example_api.egg-info/PKG-INFO
-example_api.egg-info/SOURCES.txt
-example_api.egg-info/dependency_links.txt
-example_api.egg-info/requires.txt
-example_api.egg-info/top_level.txt
-example_api.egg-info/zip-safe

@@ -1,4 +1,5 @@
 python_binary(
+  name='api',
   dependencies=[
     '3rdparty/python:flask',
     '3rdparty/python:flask-login',
@@ -6,3 +7,4 @@ python_binary(
   ],
   source='run.py',
 )
+
