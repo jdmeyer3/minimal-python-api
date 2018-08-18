@@ -16,7 +16,7 @@ I will work on better instructions, these are just initial notes. If this gains 
 # Building the PEX
 In the root directory run
 ```bash
-./pants binary src/main/python/api/src
+./pants binary src/main/python/api/src:api
 ```
 This will create the PEX file in the `dist` directory
 
@@ -38,9 +38,20 @@ Alternatively to create a python wheel file as well you'll need to run
 ```
 This will create a wheel file in your `dist` folder. If you don't specify the full path, the wheel will be inside the package directory in your `dist` folder. For example, if you create the api wheel file without specifying the --dist-dir, the wheel file will be `~/minimal-python-api/dist/api-0.1.0/dist/example_api-0.1.0-py2-none-any.whl`.
 
+# Testing
+
+## Unit tests
+//TODO
+
+## Coverage
+//TODO
+
 # Creating the Docker image
 
 For the docker image I'm simply using a Python Alpine image. NOTE. make sure the python version you use for the alpine image matches what's in your `pants.ini` file. Copy the PEX into the container and run it. It's that simple. I'll work on gathering size comparisons of deploying the Python app via a wheel vs. the PEX. In my experience, this is the simpliest (in terms of the Dockerfile) and smallest Docker Python app I've made. 
+
+
+
 
 # Contributions
 If I've made some mistake or you would like me to go over some other build processes, please submit an issue and I'll try to help as much as I can. 
