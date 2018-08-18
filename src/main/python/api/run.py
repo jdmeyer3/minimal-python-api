@@ -1,0 +1,17 @@
+import os
+from flask import Flask
+from flask_appbuilder import SQLA, AppBuilder
+
+# init Flask
+app = Flask(__name__)
+
+# Basic config with security for forms and session cookie
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+# Init SQLAlchemy
+db = SQLA(app)
+# Init F.A.B.
+appbuilder = AppBuilder(app, db.session)
+
+# Run the development server
+app.run(host='0.0.0.0', port=9080, debug=True)
